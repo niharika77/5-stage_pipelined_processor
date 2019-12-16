@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module adder (a,b,c,sum,cout);
 //}} End of automatically maintained section

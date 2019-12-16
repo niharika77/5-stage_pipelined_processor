@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+//`timescale 1ns / 1ps
 
 module adder_16bit (a,b,cin,s);		//ripple carry adder usng full adder-> basic gates
 //}} End of automatically maintained section

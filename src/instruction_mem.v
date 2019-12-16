@@ -13,7 +13,7 @@ always @(*)
 	//fibonacci
 	if (test == 2'b00)
 	 begin
-	  // MOVS R0, 0
+	        // MOVS R0, 0
           code_mem[0] = 16'b0010000000000000;
           // MOV R3, R0
           code_mem[1] = 16'b0100011000000011;
@@ -44,7 +44,7 @@ always @(*)
 
 
 	//gcd
-	  // MOVS R0, 6
+	         // MOVS R0, 6
            code_mem[0] = 16'b0010000000000110;
            // MOVS R1, 2
            code_mem[1] = 16'b0010000100000010;
@@ -110,8 +110,8 @@ always @(*)
             code_mem[0] = 16'b0010011000001001;
             // MOVS R2, 0
             code_mem[1] = 16'b0010001000000000;
-            // LOOP: CMP R6, R0  //issure it should be R2
-            code_mem[2] = 16'b0100001010000110;
+            // LOOP: CMP R6, R2
+            code_mem[2] = 16'b0100001010010110;
             // BLT LOOP1
             code_mem[3] = 16'b1101101100000101;
             // NOOP
